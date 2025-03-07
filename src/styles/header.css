@@ -1,0 +1,20 @@
+header {
+  height: 10rem;
+  width: 43rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 4rem;
+  margin: 0 auto;
+}
+
+h1 {
+  color: var(--h1-color);
+  text-align: center;
+  font-size: 3rem;
+  font-weight: lighter;
+}
+
+.svg-react {
+  width: 6rem;
+}

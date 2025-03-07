@@ -1,0 +1,57 @@
+.section2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  gap: 4rem;
+}
+
+.boton-seguir {
+  width: 15rem;
+  height: 5rem;
+  border: none;
+  border-radius: 6rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.boton-seguir:hover {
+  background-color: var(--bg-select-medida);
+}
+
+/* Estado 1 normal que muestra "Seguir" */
+.texto-siguiendo,
+.texto-dejar-seguir {
+  display: none;
+}
+
+/* Estado 2 siguiendo que oculta "Seguir" y muestra "Siguiendo" */
+.boton-seguir.is-following {
+  background-color: var(--bg-select-medida);
+  color: black;
+}
+
+.boton-seguir.is-following .texto-seguir {
+  display: none;
+}
+
+.boton-seguir.is-following .texto-siguiendo {
+  display: block;
+}
+
+/* Hover sobre estado 2 siguiendo que oculta "Siguiendo" y muestra "Dejar de seguir" */
+.boton-seguir.is-following:hover {
+  background-color: rgba(255, 0, 0, 0.26);
+  color: #ffffff;
+  border: 1px solid rgb(255, 255, 255);
+}
+
+.boton-seguir.is-following:hover .texto-siguiendo {
+  display: none;
+}
+
+.boton-seguir.is-following:hover .texto-dejar-seguir {
+  display: block;
+}

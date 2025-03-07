@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lexend Deca', serif;
+}
+
+:root {
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #233542;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /*-----------dark-------------*/
+  --text-color: #e6e6e6;
+  --h1-color: #00ebc4;
+  --card-border: #17676d;
+  --card-shadow: 0px 8px 10px -6px #17676d7e;
+  --interior-card-bg: #374c5d;
+  --card-bg: #2b4050;
+  --active-color: #ffffff;
+  --opacidad-reloj: #ffffff1c;
+  --shadow-reloj: 2px 2px 15px #2cffdc7c;
+  --deslizante-interior: #8f8f8f;
+  --button-hover-color: #86ebd9;
+  --button-shadow-hover: 0 0 2px #86ebd9;
+  --bg-select-medida: #b5f4e9;
+  --opacidad-cronometro: #ffffff39;
+  /*-----------light------------*/
+  --card-border-light: 1px solid #007067;
+  --card-shadow-light: #007e771a;
+  --card-bg-light: #c4e2e0;
+  --text-color-light: #000000;
+  --h1-light: #1a8585;
+  --bg-body-light: #e7eaf1;
+  --interior-card-bg-light: #ffffff4c;
+  --opacidad-reloj-light: #00000023;
+  --shadow-reloj-light: 2px 2px 15px #79c9c2;
+  --deslizante-interior-light: #b2b2b2;
+  --color-p-reloj: #205c60;
+  --font-size: 1.6rem;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: var(--font-size);
+  height: 100vh;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: #213547;
+    background-color: #cecece;
+  }
+}

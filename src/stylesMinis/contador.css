@@ -1,0 +1,30 @@
+.section1 {
+  width: 100%;
+  height: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+.boton-sum-clics {
+  background-color: var(--h1-color);
+  width: auto;
+  height: 10rem;
+  border: none;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.boton-sum-clics:hover {
+  background-color: var(--button-hover-color);
+  box-shadow: var(--button-shadow-hover);
+}
+.boton-sum-clics:active {
+  background-color: var(--active-color);
+}
+
+.p-sum-clics {
+  width: 100%;
+  text-align: center;
+}
